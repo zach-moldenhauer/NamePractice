@@ -17,7 +17,9 @@ public class Driver {
         FacebookClient facebookClient = new DefaultFacebookClient();
         
 	    Connection<Post> myFeed = facebookClient.fetchConnection("me/feed", Post.class);
-        // Connections support paging and are iterable
+        
+		
+		// Connections support paging and are iterable
 
         User user = facebookClient.fetchObject("me", User.class);
         Page page = facebookClient.fetchObject("cocacola", Page.class, 
